@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Disney Plus+</title>
+    <meta name="description" content="Plataforma Disney Plus">
+
+    <!--===== favicon =====-->
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico">
+    <!--===== google fonts ====-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+
+    <!--===== css style link =====-->
+    <link rel="stylesheet" href="./styles/global.css">
+</head>
+<body>
+    <div id="app">
+        <div class="app__image">
+            <img loading="lazy" src="https://image.tmdb.org/t/p/original/620hnMVLu6RSZW6a5rwO8gqpt0t.jpg" alt="Imagem do filme destaque">
+        </div>
+        
+        <header>
+            <img src="./assets/logo.png" alt="Logo Disney Plus">
+            <button type="button" class="button__menu" onclick="changeButtonMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navigation">
+                <h2>Movies</h2>
+                <form class="form" id="add__movie">
+                    <input type="text" placeholder="Adicione o seu filme" name="movie" />
+                    <button type="submit"> + </button>
+                </form>
+                <ul id="movies">
+
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="feature__movie">
+                <div class="rating">
+                    <img src="./assets/logo-imdb.png" alt="Logo da IMDB" />
+                    <strong></strong>
+                </div>
+                <!-- data de lancamento de filmes -->
+                <span></span>
+                <!-- titulo do filme -->
+                <h1></h1>
+                <!-- sinopse do filme -->
+                <p></p>
+                
+                <button type="button" onclick="">
+                    <img src="./assets/icon-play.png" alt="Icon play">
+                    Assistir agora
+                </button>
+            </section>
+        </main>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
